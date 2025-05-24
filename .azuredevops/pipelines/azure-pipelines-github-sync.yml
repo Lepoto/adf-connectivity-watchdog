@@ -1,0 +1,18 @@
+# azure-pipelines.yml
+trigger:
+  branches:
+    include:
+      - feat/resource-creation
+
+resources:
+  repositories:
+    - repository: watchdog_sync  # Logical name
+      type: github
+      name: 'Lepoto/adf-connectivity-watchdog.git'
+      endpoint: 'github-service-connection'
+
+jobs:
+- job: Build
+  steps:
+    - checkout: watchdog_sync  # Checks out the GitHub repo
+    - script: echo "Triggered by GitHub push!"
