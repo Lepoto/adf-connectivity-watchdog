@@ -8,7 +8,7 @@ resources:
   repositories:
     - repository: watchdog_sync  # Logical name
       type: github
-      name: 'Lepoto/adf-connectivity-watchdog.git'
+      name: 'Lepoto/adf-connectivity-watchdog'
       endpoint: 'github-service-connection'
 
 jobs:
