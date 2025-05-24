@@ -1,0 +1,3 @@
+.vscode
+.terraform
+/.azuredevops/infra/terraform/.terraform.lock.hcl

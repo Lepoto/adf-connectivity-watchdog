@@ -4,6 +4,10 @@ trigger:
     include:
       - feat/resource-creation
 
+pool:
+  name: 'Azure Pipelines'
+
+
 resources:
   repositories:
     - repository: watchdog_sync  # Logical name
